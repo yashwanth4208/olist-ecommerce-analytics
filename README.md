@@ -11,6 +11,16 @@ efficiency and customer satisfaction.
 
 ---
 
+## 📂 Dataset
+
+This project uses the Brazilian E-Commerce Public Dataset by Olist.
+
+The raw CSV files are not included in this repository to keep the
+repository lightweight. The analysis was performed using the original
+Olist relational datasets.
+
+---
+
 ## 🎯 Business Questions
 
 - What are the main revenue-driving categories?
@@ -25,14 +35,14 @@ efficiency and customer satisfaction.
 
 ## 🛠️ Tools & Technologies
 
-Python
-Pandas
-NumPy
-SQL
-Power BI
-DAX
-Power Query
-Git/GitHub
+- Python
+- Pandas
+- NumPy
+- SQL Server
+- Power BI
+- DAX
+- Power Query
+- Git/GitHub
 ---
 
 ## 🔄 Data Workflow
@@ -84,6 +94,16 @@ Python and Pandas were used to:
 ---
 
 ## 🗄️ SQL Analysis
+
+### SQL Implementation
+
+The SQL analysis scripts are available in:
+
+`sql/01_sql_analysis.sql`
+
+The analysis uses SQL Server syntax and covers data validation,
+revenue analysis, customer analysis, product analysis and
+delivery/customer-experience analysis.
 
 SQL was used to analyze:
 
@@ -261,29 +281,19 @@ customer satisfaction within the analyzed dataset.
 ```text
 olist-ecommerce-analytics/
 │
-├── data/
-│   ├── raw/
-│   └── cleaned/
+├── docs/
+│   ├── executive_overview.png
+│   ├── product_category_performance.png
+│   ├── customer_value_segmentation.png
+│   └── delivery_customer_experience.png
 │
 ├── notebooks/
 │   └── 01_data_cleaning.ipynb
 │
 ├── sql/
-│   ├── 01_data_quality.sql
-│   ├── 02_revenue_analysis.sql
-│   ├── 03_customer_analysis.sql
-│   ├── 04_product_seller_analysis.sql
-│   └── 05_delivery_analysis.sql
+│   └── 01_sql_analysis.sql
 │
-├── powerbi/
-│   └── olist_ecommerce_dashboard.pbix
-│
-├── docs/
-│   ├── executive_overview.png
-│   ├── product_category_performance.png
-│   ├── customer_value_segmentation.png
-│   ├── delivery_customer_experience.png
-│   └── insights.md
-│
-├── README.md
-└── requirements.txt
+├── .gitattributes
+├── .gitignore
+├── E-commerce Revenue & Customer Intelligence.pbix
+└── README.md
